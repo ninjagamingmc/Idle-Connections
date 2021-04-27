@@ -15,7 +15,6 @@ public class Node_Create : MonoBehaviour
         int checkBlue = Random.Range(0, 100);
         int checkRed = Random.Range(0, 100);
         int checkGreen = Random.Range(0, 100);
-
         
 
         if (checkBlue >= 50) {
