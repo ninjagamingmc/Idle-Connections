@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 8442049164224547257}
   - component: {fileID: -8225704389024082123}
   - component: {fileID: 7290197629306226902}
+  - component: {fileID: 4545823807321364514}
+  - component: {fileID: 1385282383680310865}
+  - component: {fileID: 4375108400284317067}
   m_Layer: 0
   m_Name: Player_Grid
   m_TagString: Untagged
@@ -109,4 +112,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa0566ec3dfbf994b8e691ed952f60ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridSize: 9
+  playerGridArray: []
+  playerGrid: {fileID: 0}
   test: {fileID: 2631326828952300306, guid: db3fa8a502216bc40ac245fde4a413c9, type: 3}
+  filledArray: 
+  filled: 0
+--- !u!58 &4545823807321364514
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8442049164224547256}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 15
+--- !u!114 &1385282383680310865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8442049164224547256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d9b1d75e39e5c74d943b4193104025a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &4375108400284317067
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8442049164224547256}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

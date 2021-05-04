@@ -6,9 +6,9 @@ public class SpawnerBaby : MonoBehaviour
 {
     public GameObject node;
     // Set your offset here (in seconds)
-    float duration = 3;
+    float duration = 1;
 
-    float timer = 3;
+    float timer = 1;
 
     void Update()
     {
