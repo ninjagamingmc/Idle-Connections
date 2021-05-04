@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8442049164224547258}
   - component: {fileID: 8442049164224547257}
-  - component: {fileID: -8225704389024082123}
   - component: {fileID: 7290197629306226902}
   - component: {fileID: 4545823807321364514}
   - component: {fileID: 1385282383680310865}
@@ -87,19 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-8225704389024082123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8442049164224547256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b400df04c3abe0f4990d341493a06d35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menu: {fileID: 1922111088602654846, guid: 2a7f5300fb605f84b9b56a33f4df6910, type: 3}
 --- !u!114 &7290197629306226902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,6 +96,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa0566ec3dfbf994b8e691ed952f60ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 9
+  playerGridArray: []
+  playerGrid: {fileID: 0}
+  filledArray: 
+  filled: 0
+--- !u!114 &-4953398641106236281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8442049164224547256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b400df04c3abe0f4990d341493a06d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gridSize: 9
