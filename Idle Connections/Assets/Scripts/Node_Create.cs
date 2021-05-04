@@ -22,18 +22,18 @@ public class Node_Create : MonoBehaviour
 
         if (checkBlue >= 50) 
         {
-            Instantiate(blueBlock, new Vector2(pos.x - 3 / 2, pos.y), Quaternion.identity);
-            this.gameObject.transform.SetParent(node, false);
+            GameObject blue = Instantiate(blueBlock, new Vector2(pos.x - 3 / 2, pos.y), Quaternion.identity);
+            blue.transform.SetParent(transform);
         }
         if(checkGreen >= 50) 
         {
-            Instantiate(greenBlock, new Vector2(pos.x, pos.y + 3 / 2), Quaternion.identity);
-            this.gameObject.transform.SetParent(node, false);
-        }
+            GameObject green = Instantiate(greenBlock, new Vector2(pos.x, pos.y + 3 / 2), Quaternion.identity);
+            green.transform.SetParent(transform);
+        } 
         if (checkRed >= 50)
         {
-            Instantiate(redBlock, new Vector2(pos.x + 3 / 2, pos.y), Quaternion.identity);
-            this.gameObject.transform.SetParent(node, false);
+            GameObject red = Instantiate(redBlock, new Vector2(pos.x + 3 / 2, pos.y), Quaternion.identity);
+            red.transform.SetParent(transform);
         }
     }
 }
