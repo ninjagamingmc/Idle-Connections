@@ -798,6 +798,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4375108400284317067, guid: 041ab9b5ddcc47d4eb40d030c264100d, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545823807321364514, guid: 041ab9b5ddcc47d4eb40d030c264100d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545823807321364514, guid: 041ab9b5ddcc47d4eb40d030c264100d, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7290197629306226902, guid: 041ab9b5ddcc47d4eb40d030c264100d, type: 3}
       propertyPath: playerGrid
       value: 
@@ -857,6 +869,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: -4953398641106236281, guid: 041ab9b5ddcc47d4eb40d030c264100d, type: 3}
+    - {fileID: 4375108400284317067, guid: 041ab9b5ddcc47d4eb40d030c264100d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 041ab9b5ddcc47d4eb40d030c264100d, type: 3}
 --- !u!1 &2136839148
 GameObject:

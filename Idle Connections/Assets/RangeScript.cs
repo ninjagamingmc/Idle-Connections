@@ -4,22 +4,23 @@ using UnityEngine;
 
 public class RangeScript : MonoBehaviour
 {
-    private List<Collider> colliders = new List<Collider>();
+    private List<Collider2D> colliders = new List<Collider2D>();
     private List<LineRenderer> lines = new List<LineRenderer>();
-    public List<Collider> GetColliders() { return colliders; }
+    public List<Collider2D> GetColliders() { return colliders; }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("Hit");
         colliders.Add(other); //hashset automatically handles duplicates
         AutoAttach(other);
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         colliders.Remove(other);
     }
 
-    void AutoAttach(Collider node)
+    void AutoAttach(Collider2D node)
     {
         LineRenderer line = this.gameObject.AddComponent<LineRenderer>();
 
