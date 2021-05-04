@@ -12,11 +12,9 @@ public class Open_Menu : MonoBehaviour
     }
     
     // Update is called once per frame
-    void Update()
+    public void OpenMenu()
     {
         var pos = transform.position;
-        if (Input.GetMouseButtonUp(1)) {
                 Instantiate(menu, new Vector2(pos.x + 3, pos.y), Quaternion.identity);
-        }
     }
 }

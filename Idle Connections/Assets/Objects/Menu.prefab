@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8915982655363165849}
   - component: {fileID: 3394925597197803210}
+  - component: {fileID: 213311693270377204}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -43,7 +44,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04cb43e3f1357c6488ab6bbad10268cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blue: {fileID: 512001637878614794, guid: 6a4f902a8fb74214f8fc2807ecfc7345, type: 3}
-  green: {fileID: 1922111088602654846, guid: 2a7f5300fb605f84b9b56a33f4df6910, type: 3}
-  red: {fileID: 3719077482322276439, guid: 34377d8e53e4a6044a6df73ae21f7546, type: 3}
+  blue: {fileID: 7354349453730613229, guid: 2b3c02190f4722d4c949d1dcf08e15cf, type: 3}
+  green: {fileID: 5696011209918040706, guid: d5b39cce37f7d9a4abf856071024bfe4, type: 3}
+  red: {fileID: 816229353015943710, guid: 13f2f1550ec8f3346a9b3fc1e712375c, type: 3}
+  menu: {fileID: 1038848699528137565}
+--- !u!114 &213311693270377204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038848699528137565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b400df04c3abe0f4990d341493a06d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   menu: {fileID: 1038848699528137565}
