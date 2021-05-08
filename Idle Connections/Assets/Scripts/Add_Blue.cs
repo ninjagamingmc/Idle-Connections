@@ -8,12 +8,16 @@ public class Add_Blue : MonoBehaviour
     Grid_Manager gridManager;
     public GameObject blueBlock;
 
+    GameObject scoreDisplay;
+    ScoreController scoreController;
+
     void Start()
     {
         myGrid = GameObject.FindGameObjectWithTag("Grid");
         gridManager = myGrid.GetComponent<Grid_Manager>();
 
-        
+        scoreDisplay = GameObject.FindGameObjectWithTag("Score");
+        scoreController = scoreDisplay.GetComponent<ScoreController>();
     }
 
 
@@ -22,9 +26,24 @@ public class Add_Blue : MonoBehaviour
     {
         for (int i = 0; i < 9; i++) {
             if (gridManager.playerGridArray[i] == null) {
+                if (removePoints()) {
                     gridManager.playerGridArray[i] = blueBlock;
                     break;
+                } 
             }
+        }
+    }
+
+    //remove score
+    public bool removePoints()
+    {
+        if (scoreController.score >= 50)
+        {
+            scoreController.score -= 50;
+            return true;
+        }
+        else {
+            return false;
         }
     }
 }

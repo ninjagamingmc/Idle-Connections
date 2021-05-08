@@ -8,12 +8,16 @@ public class Add_Green : MonoBehaviour
     Grid_Manager gridManager;
     public GameObject greenBlock;
 
+    GameObject scoreDisplay;
+    ScoreController scoreController;
+
     void Start()
     {
         myGrid = GameObject.FindGameObjectWithTag("Grid");
         gridManager = myGrid.GetComponent<Grid_Manager>();
 
-
+        scoreDisplay = GameObject.FindGameObjectWithTag("Score");
+        scoreController = scoreDisplay.GetComponent<ScoreController>();
     }
 
 
@@ -24,9 +28,25 @@ public class Add_Green : MonoBehaviour
         {
             if (gridManager.playerGridArray[i] == null)
             {
-                gridManager.playerGridArray[i] = greenBlock;
-                break;
+                if (removePoints()) {
+                    gridManager.playerGridArray[i] = greenBlock;
+                    break;
+                }
             }
+        }
+    }
+
+    //remove score
+    public bool removePoints()
+    {
+        if (scoreController.score >= 50)
+        {
+            scoreController.score -= 50;
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

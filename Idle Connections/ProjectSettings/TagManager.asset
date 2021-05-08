@@ -5,8 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - node
-  tags:
   - Grid
+  - Score
   layers:
   - Default
   - TransparentFX
